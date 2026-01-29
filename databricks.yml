@@ -1,0 +1,28 @@
+bundle:
+  name: bigdata-etl
+
+workspace:
+  root_path: /Shared/${bundle.name}
+
+include:
+  - resources/*.yml
+
+# 👇 Declaración correcta de variables (como mapas con default)
+targets:
+  dev:
+    workspace:
+      root_path: /Shared/GitHub/dev       # override solo para dev
+  prod:
+    workspace:
+      root_path: /Shared/GitHub/prd
+
+resources:
+  jobs:
+    DemoDeploy:
+      name: Demo
+      tasks:
+        - task_key: Demo
+          notebook_task:
+            notebook_path: /Workspace/Users/emgmarcote@gmail.com/demo_databricks/Demo
+            source: WORKSPACE
+  
