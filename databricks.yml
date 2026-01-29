@@ -19,7 +19,7 @@ targets:
 resources:
   jobs:
     DemoDeploy:
-      name: Demo
+      name: Demo22
       tasks:
         - task_key: Demo
           notebook_task:
