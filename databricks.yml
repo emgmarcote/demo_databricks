@@ -15,14 +15,4 @@ targets:
   prod:
     workspace:
       root_path: /Shared/GitHub/prd
-
-resources:
-  jobs:
-    DemoDeploy:
-      name: Demo22
-      tasks:
-        - task_key: Demo
-          notebook_task:
-            notebook_path: /Workspace/Users/emgmarcote@gmail.com/demo_databricks/Demo
-            source: WORKSPACE
   
